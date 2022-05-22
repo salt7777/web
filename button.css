@@ -1,0 +1,133 @@
+.snsBarGroup--deskdin {
+	padding: 25px  25px;
+/*# 上 左右 下 */
+}
+.btn--sponsordin {	
+    padding: 0.5em 40%;
+	font-size: 15px;
+    background: #E6F4F1;
+}
+
+
+@-webkit-keyframes rainbowMov {
+	0% {
+		background-position: 0
+	}
+
+	to {
+		background-position: 500%
+	}
+}
+
+@keyframes rainbowMov {
+	0% {
+		background-position: 0
+	}
+
+	to {
+		background-position: 500%
+	}
+}
+
+.btn--sponsor {
+	position: relative;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border: none;
+	border-radius: 100px;
+
+	min-width: auto;
+	line-height: inherit;
+	font-size: inherit;
+	font-weight: 300;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: none;
+	vertical-align: middle;
+	color: #fff;
+	white-space: wrap;
+	z-index: 1;
+	cursor: pointer;
+	overflow: visible
+}
+
+.btn--sponsor>span {
+	margin-right: 0.5rem
+}
+
+.btn--sponsor:before {
+	display: block;
+	background: -webkit-gradient(linear, left top, right top, from(#f36), color-stop(#f441a5), color-stop(#ffeb3b), to(#f36));
+	background: linear-gradient(90deg, #f36, #f441a5, #ffeb3b, #f36);
+	background-size: 500%;
+	border-radius: inherit;
+	content: "";
+	position: absolute;
+	top: -0.5px;
+	left: -0.5px;
+	right: -0.5px;
+	bottom: -0.5px;
+	z-index: -1;
+	opacity: 0.8;
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	-webkit-animation: rainbowMov 28s linear infinite;
+	animation: rainbowMov 28s linear infinite;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s
+}
+
+.btn--sponsor:hover:before {
+	opacity: 1;
+	-webkit-animation-duration: 8s;
+	animation-duration: 8s
+}
+
+.btn--sponsor-blue:before {
+	background: -webkit-gradient(linear, left top, right top, from(#00a2e4), color-stop(#a7cd6b), color-stop(#00a2e4), color-stop(#a7cd6b), to(#00a2e4));
+	background: linear-gradient(90deg, #00a2e4, #a7cd6b, #00a2e4, #a7cd6b, #00a2e4);
+	background-size: 500%
+}
+
+.snsBarGroup--desk {
+	top: 0;
+	right: 0;
+	bottom: unset;
+	left: unset;
+	overflow: hidden;
+	width: calc(100% - 50px);
+	background: #00000000;
+}
+
+
+.snsBarGroup--desk ~ .mainBox {
+	padding-top: 4em
+}
+
+
+.snsBarGroup--desk>:nth-child(2) {
+	margin: auto
+}
+
+.snsBarGroup--desk>:nth-child(3) {
+	padding-left: 1em
+}
+.btn--sponsoryl {	
+    margin: 0;
+	padding: 0.5em 2em;
+}
+ .btn--sponsoryl {
+	font-size: 10px;
+    background: #FAC701;
+}
+
+.snsBarGroup--desk .btn--sponsor>span {
+	-webkit-transform: scale(1);
+	transform: scale(1)
+}
